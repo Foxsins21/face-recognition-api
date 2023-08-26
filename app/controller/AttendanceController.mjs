@@ -255,7 +255,7 @@ const AttendanceController = {
       let sum = 0;
       for (let i = 1; i <= days; i++) {
         let getDay = new Date(req.query.month + "-" + i).getDay();
-        if ([1, 2, 3, 4, 5].includes(getDay)) {
+        if ([1, 2, 3, 4, 5, 6].includes(getDay)) {
           sum++;
         }
       }
